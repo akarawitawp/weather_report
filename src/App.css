@@ -1,38 +1,77 @@
-.App {
+body{
+  width:100vw;
+  height:100vh;
+  margin:0;
   text-align: center;
+  color:#515151;
+  background:linear-gradient(45deg,#185aad,#43c2a2)
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.App{
+  display:flex;
   flex-direction: column;
-  align-items: center;
+  align-items:center;
+  justify-items: center;
+}
+section{
+  margin-top: 7%;
+}
+
+.card{
+  width: 500px;
+  box-shadow: 0 10px 0 #515151;
+}
+
+.weather{
+  display:flex;
+  flex-direction:column ;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #fff;
+  background:orange;
+  height: 10vh;
+  padding: 20px 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.weather h1{
+  margin:0;
+  font-size: 1em;
+}
+.location{
+  color:#fff;
+}
+.city{
+  margin: 0;
+  font-size: 2em;
+}
+.state{
+  margin-top: 0;
+}
+.info{
+  display: flex;
+  background-color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.info *{
+  padding: 20px;
+  flex: 1;
+}
+.Search-box{
+  display:flex;
+  flex-direction: column;
+  margin-top: 50px;
+  align-items: center;
+}
+.input-container{
+  border-radius: 1px;
+  height: 30px;
+  width: 200px;
+}
+.button-container{
+  margin-top: 20px;
+  border-radius: 2px;
+  height: 30px;
+  width: 100px;
+  background-color: rgb(226, 140, 90);
 }
